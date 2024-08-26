@@ -14,4 +14,19 @@ function getComputerChoice() {
   } else return "scissors";
 }
 
+function getHumanChoice() {
+  let userInt = parseInt(
+    prompt("Enter 0 for rock\n1 for paper\n2 for scissors")
+  );
+  if (userInt === 0 || userInt === 1 || userInt === 2) {
+    if (userInt === 0) {
+      return "rock";
+    } else if (userInt === 1) {
+      return "paper";
+    } else return "scissors";
+  }
+  alert("Invalid input.");
+  getHumanChoice();
+}
+
 
