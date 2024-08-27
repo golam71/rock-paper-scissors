@@ -32,6 +32,9 @@ function getHumanChoice() {
   getHumanChoice();
 }
 
+let humanChoice;
+let comptupterChoice;
+
 function playRound(humanChoice, comptupterChoice) {
   comptupterChoice = getComputerChoice();
   humanChoice = getHumanChoice();
@@ -80,8 +83,6 @@ function playRound(humanChoice, comptupterChoice) {
   console.log(`Human score : ${humanScore}`);
 }
 
-playRound();
-playRound();
-playRound();
-playRound();
-playRound();
+for (let i = 0; i < 5; i++) {
+  playRound(humanChoice, comptupterChoice);
+}
