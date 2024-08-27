@@ -5,6 +5,9 @@
  * then retrun the same stuff compare tem using if else and say result
  */
 
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
   let randomInt = Math.floor(Math.random() * 3);
   if (randomInt === 0) {
@@ -29,4 +32,56 @@ function getHumanChoice() {
   getHumanChoice();
 }
 
+function playRound(humanChoice, comptupterChoice) {
+  comptupterChoice = getComputerChoice();
+  humanChoice = getHumanChoice();
 
+  console.log(`Computer ${comptupterChoice} VS Human ${humanChoice}`);
+
+  switch (comptupterChoice) {
+    //
+    case "rock":
+      if (humanChoice === "paper") {
+        console.log("Human wins Computer looses");
+        humanScore++;
+      } else if (humanChoice === "scissors") {
+        console.log("Computer wins. Human loses");
+        computerScore++;
+      } else console.log("This match is drawn as both players chose rock");
+
+      break;
+    //
+    case "paper":
+      if (humanChoice === "scissors") {
+        console.log("Human wins Computer looses");
+        humanScore++;
+      } else if (humanChoice === "rock") {
+        console.log("Computer wins. Human loses");
+        computerScore++;
+      } else console.log("This match is drawn as both players chose paper");
+
+      break;
+    case "scissors":
+      if (humanChoice === "rock") {
+        console.log("Human wins Computer looses");
+        humanScore++;
+      } else if (humanChoice === "paper") {
+        console.log("Computer wins. Human loses");
+        computerScore++;
+      } else console.log("This match is drawn as both players chose scissors");
+      //
+
+      break;
+
+    default:
+      break;
+  }
+  console.log(`Computer score : ${computerScore}`);
+  console.log(`Human score : ${humanScore}`);
+}
+
+playRound();
+playRound();
+playRound();
+playRound();
+playRound();
