@@ -1,0 +1,57 @@
+body {
+    background-color: #f7f4ea;
+    padding: 20px;
+}
+
+h1,
+h3 {
+    text-align: center;
+    color: black;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.play {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.play > div {
+    height: 130px;  /* Set height for mobile */
+    width: 130px;   /* Set width for mobile */
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E1DABD;
+    border-radius: 10%;
+}
+
+@media (min-width: 768px) {  /* Adjust the breakpoint as needed */
+    div.play > div {
+        height: 250px;  /* Set height for larger screens */
+        width: 250px;   /* Set width for larger screens */
+    }
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+button {
+    margin: 20px;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 10%;
+    border: none;
+}
+h3{
+    text-align: center;
+}
