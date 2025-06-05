@@ -1,6 +1,7 @@
 * {
   margin: none;
   outline: none;
+  border-radius: 5px;
 }
 
 form {
@@ -27,7 +28,7 @@ textarea:user-valid {
 }
 
 button {
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 7px 15px;
 }
 
@@ -35,17 +36,22 @@ button {
   padding: 10px;
   display: block !important;
   margin: 10px 0px;
-  background-color: rgb(243, 175, 175);
+  background-color: rgb(255, 210, 210);
   border: 3px dashed red;
 }
 
 .success {
   padding: 10px;
-  display: block;
-  background-color: lightgreen;
+  display: block !important;
+  margin: 10px 0px;
+  background-color: rgb(167, 248, 167);
   border: 3px dashed green;
 }
 
 #message {
   display: none;
+}
+
+h1 {
+  text-align: center;
 }
