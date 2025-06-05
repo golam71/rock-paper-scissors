@@ -4,27 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Basic Form</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>Enhanced Form Validation</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h1>Form Validation</h1>
-  <form method="post" novalidate>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
+  <form id="validationForm" novalidate>
+    <label for="name">Name (2-20 characters):</label>
+    <input type="text" id="name" name="name" required>
 
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
+    <input type="email" id="email" name="email" required>
 
-    <label for="comment">Comment:</label><br>
-    <textarea id="comment" name="comment" rows="7" cols="30"></textarea><br><br>
+    <label for="comment">Comment (10-200 characters):</label>
+    <textarea id="comment" name="comment" rows="5" required></textarea>
+    <div class="char-counter" id="charCounter">0/200</div>
 
-    <div id="message">Error Message</div>
-
-    <button id="submit">Submit</button>
+    <div id="message"></div>
+    <button type="submit" id="submitBtn">Submit</button>
   </form>
+
+  <script src="./script.js">  </script>
 </body>
-<script src="./script.js"></script>
 
 </html>
