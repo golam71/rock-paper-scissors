@@ -14,7 +14,6 @@ input,
 textarea,
 button {
   border: 1px solid black;
-  margin: 4px;
   padding: 7px 5px;
 }
 input:user-invalid,
@@ -33,15 +32,20 @@ button {
 }
 
 .error {
-  background-color: lightcoral;
   padding: 10px;
-  margin: 4px;
-  border: 3px dashed white;
+  display: block !important;
+  margin: 10px 0px;
+  background-color: rgb(243, 175, 175);
+  border: 3px dashed red;
 }
 
 .success {
-  background-color: lightgreen;
   padding: 10px;
-  margin: 4px;
-  border: 3px dashed white;
+  display: block;
+  background-color: lightgreen;
+  border: 3px dashed green;
+}
+
+#message {
+  display: none;
 }
