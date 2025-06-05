@@ -31,3 +31,17 @@ button {
   margin: 0 auto;
   padding: 7px 15px;
 }
+
+.error {
+  background-color: lightcoral;
+  padding: 10px;
+  margin: 4px;
+  border: 3px dashed white;
+}
+
+.success {
+  background-color: lightgreen;
+  padding: 10px;
+  margin: 4px;
+  border: 3px dashed white;
+}
