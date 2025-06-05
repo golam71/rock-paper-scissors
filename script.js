@@ -132,13 +132,10 @@ function playRound(humanChoice, comptupterChoice) {
   document.getElementById("robot").innerText = computerScore;
   document.getElementById("result").innerHTML  = `Round ${rounds} : ${result}`
 
-  // console.log(`Computer score : ${computerScore}`);
-  // console.log(`Human score : ${humanScore}`);
+
 }
 
-// for (let i = 0; i < 5; i++) {
-//   playRound(humanChoice, comptupterChoice);
-// }
+
 
 function play(choice) {
   playRound(choice, comptupterChoice);
